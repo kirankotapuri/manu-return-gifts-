@@ -1,0 +1,7 @@
+{
+  "name": "Manu Return Gifts",
+  "description": "A sophisticated e-commerce landing page for an upscale return gifts company featuring a luxurious dark theme with gold accents.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manu Return Gifts | Curating Moments of Joy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: '#D4AF37',
+                light: '#F3E5AB',
+                dark: '#AA8C2C',
+                50: '#FBF7E8',
+                100: '#F6EFD1',
+                200: '#EDDFA3',
+                300: '#E4CF75',
+                400: '#D4AF37',
+                500: '#AA8C2C',
+                600: '#856D22',
+                700: '#5F4E18',
+                800: '#3A2F0F',
+                900: '#151105',
+              },
+              luxury: {
+                black: '#0a0a0a',
+                dark: '#121212',
+                charcoal: '#1c1c1c'
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              display: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'gold-gradient': 'linear-gradient(to right, #D4AF37, #F3E5AB, #D4AF37)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #D4AF37; 
+      }
+      .text-gold-gradient {
+        background: linear-gradient(to right, #D4AF37, #F3E5AB, #D4AF37);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 200% auto;
+        animation: shine 4s linear infinite;
+      }
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+      
+      /* Voice Agent Widget Styling */
+      elevenlabs-convai {
+        transform: scale(0.9);
+        transform-origin: bottom right;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 50;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-luxury-black text-gray-300 antialiased selection:bg-gold-400 selection:text-black">
+    <div id="root"></div>
+    <elevenlabs-convai agent-id="agent_6101kgs5znvgev79najme1xc83w5"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
