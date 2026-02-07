@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           {/* Logo Section */}
           <div className="flex items-center cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
             <img
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Manu Return Gifts Logo"
               className="h-32 md:h-36 object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]"
             />

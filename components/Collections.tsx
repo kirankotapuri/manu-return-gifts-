@@ -25,7 +25,7 @@ const Collections: React.FC = () => {
               {/* Image */}
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                style={{ backgroundImage: `url(${collection.image})` }}
+                style={{ backgroundImage: `url(${collection.image.startsWith('/') ? `${import.meta.env.BASE_URL}${collection.image.slice(1)}` : collection.image})` }}
               ></div>
 
               {/* Overlay - Darkens on hover */}

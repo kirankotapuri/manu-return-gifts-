@@ -23,11 +23,11 @@ const Gallery: React.FC = () => {
           {GALLERY_ITEMS.map((item) => (
             <div
               key={item.id}
-              onClick={() => setSelectedImage(item.src)}
+              onClick={() => setSelectedImage(`${import.meta.env.BASE_URL}${item.src.replace(/^\//, '')}`)}
               className="relative group overflow-hidden cursor-zoom-in aspect-square rounded-lg border border-gray-800 hover:border-gold-500/50 transition-all duration-300"
             >
               <img
-                src={item.src}
+                src={`${import.meta.env.BASE_URL}${item.src.replace(/^\//, '')}`}
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 filter brightness-90 group-hover:brightness-100"
               />

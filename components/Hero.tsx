@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           playsInline
           className="absolute w-full h-full object-cover scale-105"
         >
-          <source src="/loopgiftvideo.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}loopgiftvideo.mp4`} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-luxury-black/80 via-luxury-black/70 to-luxury-black/95"></div>
       </div>
